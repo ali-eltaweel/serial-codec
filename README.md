@@ -15,3 +15,14 @@ composer require ali-eltaweel/serial-codec
 ```
 
 ## Usage
+
+```php
+use Codecs\SerialCodec;
+
+$serialCodec = new SerialCodec();
+
+$code = $serialCodec->encode($data);
+
+$data = $serialCodec->decode($code);
+```
+
